@@ -60,6 +60,7 @@ bool snake::HitEdge(int mapkind)
 				return true;
 			}
 		}
+		break;
 	case 2:
 		for (auto& point : Map->map1)
 		{
@@ -69,6 +70,7 @@ bool snake::HitEdge(int mapkind)
 				return true;
 			}
 		}
+		break;
 	case 3:
 		for (auto& point : Map->map2)
 		{
@@ -78,6 +80,7 @@ bool snake::HitEdge(int mapkind)
 				return true;
 			}
 		}
+		break;
 	}
 	delete Map;
 	return false;
